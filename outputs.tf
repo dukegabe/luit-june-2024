@@ -3,7 +3,7 @@ output "vpc_id" {
 }
 
 output "web_server_ips" {
-  value = aws_instance.web[*].public_ip
+  value = aws_instance.DukeWebSever[*].public_ip
 }
 
 output "rds_endpoint" {
